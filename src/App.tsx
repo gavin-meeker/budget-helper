@@ -1,14 +1,11 @@
 
 function App() {
-
-  return (
-    <>
-      <p>
-          hello wrold
-      </p>
-        <p>Hello World</p>
-    </>
-  )
+    return (
+        <>
+            <div>hello</div>
+            <div>hello</div>
+        </>
+    )
 }
 
 export default App
