@@ -3,7 +3,7 @@ import TextField from '@mui/material/TextField'
 import Container from '@mui/material/Container'
 import Grid from '@mui/material/Grid'
 import Button from '@mui/material/Button'
-import RemainingAmount from './RemainingAmount'
+import CategoryTable from './CategoryTable'
 
 const App = () => {
     return (
@@ -14,11 +14,16 @@ const App = () => {
                 </Typography>
                 <Grid container spacing={2} alignItems="center">
                     <Grid size={4}>
-                        <TextField label="Monthly Income" variant="outlined" />
+                        <TextField
+                            fullWidth
+                            label="Monthly Income"
+                            variant="outlined"
+                        />
                     </Grid>
                     <Grid size={4}>
                         <Button
                             size="large"
+                            fullWidth
                             sx={{ ':hover': 'reset', cursor: 'default' }}
                             color="error"
                             component="p"
@@ -31,6 +36,7 @@ const App = () => {
                         </Button>
                     </Grid>
                 </Grid>
+                <CategoryTable />
             </Container>
         </>
     )
